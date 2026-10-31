@@ -34,7 +34,8 @@
 ### ภาพถ่ายการต่อวงจรฮาร์ดแวร์จริง
 
 > 📷 **ภาพถ่ายวงจรฮาร์ดแวร์จริง:**  
-> *(ให้นักศึกษาถ่ายภาพบอร์ด ESP32 เชื่อมต่อกับ LED ขา 2 และ Potentiometer ขา 34 บน Breadboard ของตนเองมาแนบในช่องนี้)*
+<img width="1024" height="768" alt="image" src="https://github.com/user-attachments/assets/540c4a0d-0f5f-41a8-887e-0bd468074ace" />
+
 
 ---
 
@@ -59,7 +60,8 @@ allow_anonymous true
 log_type all
 ```
 
-![Mosquitto Broker Running](images/lab11_1_photo1.png)
+<img width="772" height="354" alt="image" src="https://github.com/user-attachments/assets/d2be7212-ccde-47e7-b2bc-d2fb0b9b95db" />
+
 *รูปที่ 2: หน้าต่าง Terminal แสดงการเริ่มต้นทำงานของ Mosquitto Broker บนพอร์ต 1883*
 
 ---
@@ -90,7 +92,8 @@ log_type all
 * เมื่อส่งข้อความปกติในขณะที่ยังไม่มีใคร Subscribe -> ข้อความจะหายไปในทันที
 * เมื่อส่งข้อความโดยระบุพารามิเตอร์ `-r` (Retain) -> Broker จะบันทึกข้อความล่าสุดค้างไว้ในระบบ เมื่อมี Subscriber เชื่อมต่อเข้ามาในภายหลัง จะได้รับข้อความนี้ทันทีโดยไม่ต้องรอรอบส่งใหม่
 
-![Retained Message Test](images/lab11_1_photo2.png)
+<img width="753" height="257" alt="image" src="https://github.com/user-attachments/assets/3a31f60f-58df-44fc-b7fa-9271a05a3355" />
+
 *รูปที่ 5: หน้าต่าง Subscriber เชื่อมต่อเข้ามาใหม่และได้รับข้อความ Retained ทันที*
 
 ---
@@ -181,13 +184,13 @@ Sending PUBLISH to auto-A18F9C42-1088-7321-B892-0073AA110073 (d0, q0, r0, m0, 'h
 ```
 
 <div align="center">
-  <img src="images/lab11_1_photo1.png" alt="Terminal Capture 1: Mosquitto Broker Verbose & Wildcards" width="700"/>
+  <img width="524" height="280" alt="image" src="https://github.com/user-attachments/assets/fd108346-bd0c-4f0c-82ca-df2b3f379075" />
   <br/>
   <b>รูปที่ 2: หน้าต่าง Terminal บันทึกผลการรัน Mosquitto Broker ในโหมด Verbose และการทดสอบ Publish/Subscribe Wildcards จริง (67030073)</b>
 </div>
 
 <div align="center" style="margin-top: 15px;">
-  <img src="images/lab11_1_photo2.png" alt="Terminal Capture 2: Retained Messages & LWT Test" width="700"/>
+  <img width="525" height="180" alt="image" src="https://github.com/user-attachments/assets/de64f88e-2e61-4105-aae9-9aaf81412afa" />
   <br/>
   <b>รูปที่ 5: หน้าต่าง Terminal บันทึกผลการทดสอบ Retained Message และการจำลองสัญญาณ LWT เมื่อตัดการเชื่อมต่อ (67030073)</b>
 </div>
